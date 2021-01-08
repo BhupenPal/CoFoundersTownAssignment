@@ -1,0 +1,38 @@
+/* GLOBAL STYLE SHEET */
+/* 1. FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$primary-font: 'sans-serif';
+$secondary-font: 'arial';
+
+/* 2. GRADIENTS */
+$primary-gradient: linear-gradient(201.33deg, #2C8ADF 1.75%, #4049D0 97.05%);
+
+* {
+	font-family: $primary-font;
+}
+
+html, body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+// FONTS
+.primary-font {
+	font-family: $primary-font;
+}
+
+.secondary-font {
+	font-family: $secondary-font;
+}
+
+// GRADIENTS
+.primary-gradient {
+	color:'ping';
+	background-color: $primary-gradient;
+}
