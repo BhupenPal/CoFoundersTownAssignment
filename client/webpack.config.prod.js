@@ -27,8 +27,8 @@ module.exports = {
 	},
 	output: {
 		path: resolve(__dirname, '..', 'dist'),
-		filename: '[name].bundle.js',
-		chunkFilename: '[name].bundle.js',
+		filename: '[name].[contenthash].bundle.js',
+		chunkFilename: '[name].[contenthash].bundle.js',
 		publicPath: '/',
 	},
 	module: {
@@ -68,9 +68,9 @@ module.exports = {
 		new webpack.DefinePlugin(EnvKeys),
 		new HTMLWebpackPlugin({
 			filename: 'index.html',
-			favicon: './src/assets/img/favicon.ico',
+			favicon: './assets/img/branding/favicon.ico',
 			inject: true,
-			template: resolve(__dirname, 'src', 'index.html'),
+			template: resolve(__dirname, 'index.html'),
 		}),
 	],
 };
